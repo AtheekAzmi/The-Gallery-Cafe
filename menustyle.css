@@ -1,0 +1,234 @@
+
+/* Reset some default browser styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: auto;
+}
+
+body {
+    background: url(images/pattern.avif);
+    background-repeat: repeat;
+    background-size: 20%;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: scroll; /* Prevent scrolling */
+}
+
+
+
+.menu-container {
+    position: relative;
+    z-index: 1; /* Ensure content is above the video */
+    max-width: 1200px;
+    margin: 120px 0 50px 0 ;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+    text-shadow: 0 0 13px rgba(0, 0, 0, 0.6);
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    overflow: auto;
+    height: 550px;
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 210px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 75%;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    color: #777;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+}
+
+.btn {
+    background-color: #fcbe7c; /* Tomato color */
+    color: white;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6f00; /* Darker tomato color */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire background */
+    z-index: -1; /* Place the video behind the content */
+    opacity: 0.6; /* Adjust opacity for a subtle effect */
+}
+
+
+/* Navigation Bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcbe7c;
+    padding: 12px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.header .logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.header .bar {
+    display: none; /* Hide for now; used for mobile */
+}
+
+.header .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header .nav ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header .nav ul a li {
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header .nav ul a li:hover {
+    color: #c5a72d;
+    background-color: #ffe942;
+    box-shadow: 0 0 18px #ffe942;
+    border-radius: 8px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.header .account ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.header .account ul a i {
+    font-size: 24px;
+    color: #333;
+    margin-right: 20px;
+}
+
+.header .account ul a:hover i {
+    color: #ff6f00;
+}
+
+.menu-item .btn i{
+    font-size: 25px;
+}
+
+ /* Slider Container */
+ .swiper-container {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.offer-info {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.offer-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.offer-info p {
+    font-size: 1.5rem;
+}
+
+/* Pagination Styling */
+.swiper-pagination-bullet {
+    background-color: #ffb259;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff8038;
+}

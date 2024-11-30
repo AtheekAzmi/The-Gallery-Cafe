@@ -1,0 +1,169 @@
+button[type=submit]{
+        width:auto;
+        height:auto;
+        border: none;
+        background: transparent;
+        padding-top: 5px;
+    }
+
+    button i{
+        font-size: 25px;
+        color: black;
+    }
+
+    /* Importing a modern font */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+*{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f5af68;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    /* font-size: 1rem; */
+}
+
+.table-bottom{
+    font-weight: 800;
+    font-size: 15px;
+}
+
+td img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.1);
+}
+
+tbody tr {
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+td a.delete-btn i {
+    color: #ffac54;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+td a.delete-btn i:hover {
+    color: #ff3b3b;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover i {
+    transform: rotate(270deg);
+    color: #f5af68;
+}
+
+tfoot .table-bottom td {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+tfoot td a.option-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+tfoot td a.option-btn:hover {
+    background-color: #f5af68;
+}
+
+.checkout-btn a.btn {
+    display: inline-block;
+    background-color: #f5af68;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkout-btn a.btn:hover {
+    background-color: #333;
+    transform: translateY(-5px);
+}
+
+.checkout-btn a.disabled {
+    pointer-events: none;
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.table-bottom .option-btn i{
+    color: #f5af68;
+    transition: transform 0.3s ease;
+}
+
+.table-bottom .option-btn i:hover{
+    transform: scale(1.1);
+    color: rgb(255, 157, 0);
+}

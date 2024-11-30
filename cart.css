@@ -1,0 +1,145 @@
+/* Reset some default browser styling */
+body, h1, h2, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    /* color: #eaeaea61; */
+}
+
+.heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead th {
+    background-color: #ff6347; /* Tomato color */
+    color: #fff;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+}
+
+tbody td img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+tbody td input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn, .option-btn, .delete-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+}
+
+.btn.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.option-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff4500; /* Darker tomato color */
+    color: white;
+}
+
+.btn:hover, .option-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
+
+.table-bottom {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.checkout-btn {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-btn .btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+.delete-btn i, .option-btn i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    tbody td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 2em;
+    }
+
+    .checkout-btn .btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
